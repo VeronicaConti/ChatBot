@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - funcionalidad
+  - despedida
+  - informacion_destino
+
+entities:
+    - nombre
+
+slots:
+  nombre:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: nombre
+  destinos_aleatorios:
+    type: text
+    mappings: []
+ 
+
+responses:
+  utter_saludo:
+  - text: "Hola {nombre}! En que puedo ayudarte hoy?"
+  - text: "Buenas {nombre} Te ayudo a encontrar destino para tu proximo viaje"
+  - text: "Hola {nombre} Te ayudo a encontrar destino para tu proximo viaje?"
+  - text: "{nombre} a donde te gustaria viajar?"
+  - text: "{nombre} que te interesa?"
+ 
+  utter_despedida:
+  - text: "Hasta luego, que tengas un buen dia {nombre}!"
+  - text: "Nos vemos luego {nombre} espero haberte ayudado!"
+  - text: "Adios {nombre} desearia que te sirva mi ayuda!"
+  - text: "{nombre} Que tengas un buen dia y espero haberte sido de ayuda!"
+  
+  utter_iamabot:
+  - text: "Mi funcionalidad es recomendarte destinos turisticos para tus proximas vacaciones "
+
+actions:
+ - action_retorna_destinos
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello anytime the user says hello
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: funcionalidad
+  - action: utter_iamabot

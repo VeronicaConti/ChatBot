@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+
+- story: usuario_saluda
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+
+- story: usuario_quiere_funcionalidad
+  steps:
+  - intent: funcionalidad
+  - action: utter_iamabot
+
+- story: usuario_despide
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: usuario_quiere_viajar
+  steps:
+  - intent: informacion_destino
+  - action: action_retorna_destinos

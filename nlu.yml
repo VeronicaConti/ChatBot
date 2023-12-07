@@ -1,0 +1,59 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - Hola
+    - Buenas
+    - Buen dia
+    - Saludos
+    - Buenas tardes
+    - Soy [vero](nombre)
+    - Me llamo [marta](nombre)
+    - Holis, soy [gaston](nombre)
+    - Buenass soy[sol](nombre)
+    - ola
+    - Como estas? Soy [laura](nombre)
+    - che
+    - hola soy [raquel](nombre)
+  
+- intent: funcionalidad
+  examples: |
+    - cual es tu funcion?
+    - en que me ayudarias?
+    - para que servis?
+
+- intent: despedida
+  examples: |
+    - Adios
+    - Hasta luego
+    - Nos vemos
+    - Chau
+    - Hasta pronto
+    - Buen viaje
+    - Hasta pronto
+    - Nos vimos
+    - Hasta la vuelta
+    - ok
+    - bye
+
+- intent: informacion_destino
+  examples: |
+    - viajes
+    - lugar
+    - destinos
+    - destino para viajar
+    - Puedes darme informacion de destinos?
+    - Que lugares puedo visitar?
+    - Que destinos recomiendas?
+    - Cuontame de viajes.
+    - mas sobre tus destinos.
+    - recomendacion viaje
+    - Quiero vacaciones, me recomiendas?
+    - donde deberia ir de viaje?
+    - Cual seria un buen destino para mis proximas vacaciones?
+    - Que lugar me recomendarias para ir de viaje?
+    - visitar lugar
+    - quiero viajar
+    - Necesito ayuda para elegir un destino de viaje.
+    - Donde deberia ir de viaje?
